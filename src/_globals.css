@@ -1,0 +1,60 @@
+body {
+  font-family: var(--font-primary);
+}
+
+p {
+  font-size: 0.9rem;
+  line-height: 30px;
+}
+
+.inner-container {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.space-top {
+  padding-top: 80px;
+}
+
+.btn-with-arrow {
+  background-color: var(--primary-main);
+  padding: 15px 30px;
+  color: var(--common-white);
+  border-radius: 100px;
+  box-shadow: var(--button-shadow);
+  font-weight: 700;
+  font-size: 0.8rem;
+  display: inline-block;
+  transform: scale(1);
+  -ms-transform: scale(1);
+  transform-origin: center;
+  transition: transform 200ms linear;
+}
+
+.btn-with-arrow:hover,
+.btn-with-arrow:active {
+  transform: scale(1.03);
+  -ms-transform: scale(1.03);
+}
+
+.btn-icon {
+  margin-left: 10px;
+}
+
+.main-heading {
+  color: var(--primary-main);
+  font-size: 1.8rem;
+  position: relative;
+}
+
+.main-heading::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 80px;
+  height: 5px;
+  background-color: var(--primary-main);
+}

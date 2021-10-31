@@ -1,0 +1,24 @@
+.header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: nowrap row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand-container {
+  background-color: var(--common-white);
+  padding: 10px;
+  border-radius: 0 0 15px 15px;
+}
+
+.burger-menu {
+  color: var(--common-white);
+  cursor: pointer;
+}

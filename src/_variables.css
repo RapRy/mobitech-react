@@ -1,0 +1,12 @@
+:root {
+  --font-primary: "Raleway", sans-serif;
+
+  --common-black: #000;
+  --common-white: #fff;
+  --common-grey-1: #f5f5f5;
+  --common-grey-2: #a7a8ac;
+  --primary-main: #b41b21;
+
+  --card-shadow: 3px 3px 15px rgba(0, 0, 0, 0.13);
+  --button-shadow: 5px 8px 15px rgba(0, 0, 0, 0.24);
+}
