@@ -1,4 +1,35 @@
 .service-container {
   position: relative;
+}
+
+.service-list {
+  margin-top: 40px;
+}
+
+.card-container {
+  background-color: var(--common-white);
+  border-radius: 15px;
+  box-shadow: var(--card-shadow);
+  padding-top: 30px;
+  text-align: center;
+}
+
+.card-container .icon {
+  color: var(--primary-main);
+  margin-bottom: 20px;
+}
+
+.card-container div {
   background-color: var(--common-grey-1);
+  padding: 20px 20px 30px;
+  border-radius: 0 0 15px 15px;
+}
+
+.card-container h4 {
+  margin-bottom: 20px;
+  color: var(--common-black);
+}
+
+.card-container p {
+  color: var(--common-black);
 }

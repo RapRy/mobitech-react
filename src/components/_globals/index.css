@@ -1,0 +1,24 @@
+.main-heading {
+  color: var(--primary-main);
+  font-size: 1.8rem;
+  position: relative;
+}
+
+.main-heading::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 80px;
+  height: 5px;
+  background-color: var(--primary-main);
+}
+
+[data-heading-color="primary"] {
+  color: var(--primary-main);
+}
+
+[data-heading-color="primary"]::after {
+  background-color: var(--primary-main);
+}

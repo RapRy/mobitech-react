@@ -1,10 +1,11 @@
 body {
   font-family: var(--font-primary);
+  background-color: var(--common-grey-1);
 }
 
 p {
   font-size: 0.9rem;
-  line-height: 30px;
+  line-height: 25px;
 }
 
 .inner-container {
@@ -40,21 +41,4 @@ p {
 
 .btn-icon {
   margin-left: 10px;
-}
-
-.main-heading {
-  color: var(--primary-main);
-  font-size: 1.8rem;
-  position: relative;
-}
-
-.main-heading::after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 80px;
-  height: 5px;
-  background-color: var(--primary-main);
 }
