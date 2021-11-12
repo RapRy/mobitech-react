@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {
   faMobileAlt,
   faUserTie,
@@ -52,15 +52,49 @@ const services = [
 ];
 
 const ServicesHome = () => {
+  const ref = useRef();
+  const [down, setDown] = useState(false);
+  const [test, setTest] = useState(0);
+
+  const downEvent = (e) => {
+    setTest(e.pageX);
+    setDown(true);
+  };
+
+  const downLeaveEvent = (e) => {
+    setDown(false);
+  };
+
+  const dragEvent = (e) => {
+    if (down && e.buttons === 1) {
+      setTest(test);
+      // console.log(ref.current.clientWidth);
+      console.log(e.currentTarget.offsetLeft);
+    }
+  };
+
+  useEffect(() => {
+    console.log("parent");
+  }, []);
+
   return (
     <div className="service-container space-top">
       <div className="inner-container">
         {/* <h1 className="main-heading">WHAT WE DO</h1> */}
         <MainHeading text="WHAT WE DO" color="primary" />
-        <div className="service-list">
-          {services.map((service, i) => (
-            <Card key={i} service={service} />
-          ))}
+        <div className="service-list-container">
+          <div
+            className="service-list"
+            ref={ref}
+            onMouseMove={dragEvent}
+            onMouseDown={downEvent}
+            onMouseUp={downLeaveEvent}
+            style={{ transform: `translateX(-${test}px)` }}
+          >
+            {services.map((service, i) => (
+              <Card key={i} service={service} index={i} />
+            ))}
+          </div>
         </div>
       </div>
     </div>

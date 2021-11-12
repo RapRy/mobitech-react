@@ -2,8 +2,14 @@
   position: relative;
 }
 
+.service-list-container {
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
 .service-list {
-  margin-top: 40px;
+  margin: 40px 0;
+  padding: 0 30px;
 }
 
 .card-container {
@@ -12,6 +18,16 @@
   box-shadow: var(--card-shadow);
   padding-top: 30px;
   text-align: center;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.card-container:first-child {
+  margin-left: 0;
+}
+
+.card-container:last-child {
+  margin-right: 0;
 }
 
 .card-container .icon {
@@ -32,4 +48,5 @@
 
 .card-container p {
   color: var(--common-black);
+  white-space: normal;
 }

@@ -2,6 +2,7 @@
   color: var(--primary-main);
   font-size: 1.8rem;
   position: relative;
+  margin: 0 30px;
 }
 
 .main-heading::after {
